@@ -7,9 +7,9 @@ import pandas
 
 pyautogui.PAUSE = 0.3
 
-#pyautogui.press("win")
-#pyautogui.write("opera")
-#pyautogui.press("enter")
+pyautogui.press("win")
+pyautogui.write("opera")
+pyautogui.press("enter")
 
 pyautogui.click(x=472, y=56)
 pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
@@ -23,7 +23,6 @@ pyautogui.press("tab")
 pyautogui.write("senha12345")
 pyautogui.click(x=676, y=562) 
 time.sleep(10)
-
 
 tabela = pandas.read_csv("C:/Users/thiag/Projetos/autobot/produtos.csv")
 
@@ -55,5 +54,5 @@ for linha in tabela.index:
     pyautogui.press("tab")
     pyautogui.press("enter") 
     
-    pyautogui.scroll(5000)
+    pyautogui.scroll(5000)    
     
