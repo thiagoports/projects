@@ -7,9 +7,9 @@ import pandas
 
 pyautogui.PAUSE = 0.3
 
-#pyautogui.press("win")
-#pyautogui.write("opera")
-#pyautogui.press("enter")
+pyautogui.press("win")
+pyautogui.write("opera")
+pyautogui.press("enter")
 
 pyautogui.click(x=472, y=56)
 pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
