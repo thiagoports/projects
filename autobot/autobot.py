@@ -54,5 +54,10 @@ for linha in tabela.index:
     pyautogui.press("tab")
     pyautogui.press("enter") 
     
+<<<<<<< HEAD
     pyautogui.scroll(5000)    
     
+=======
+    pyautogui.scroll(5000)
+    
+>>>>>>> 78a1b57d41d9a4cc44be0bf4a43416f3eb429b44
