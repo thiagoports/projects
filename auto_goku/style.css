@@ -1,0 +1,107 @@
+body {
+  background-color: #b3e0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.goku {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+/* Cabeça e Rosto */
+.face {
+  background-color: #fcd7b6;
+  width: 150px;
+  height: 180px;
+  border-radius: 50% 50% 45% 45%;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+}
+
+/* Olhos */
+.eyes {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 70px;
+  width: 80%;
+  left: 10%;
+}
+
+.eye {
+  background-color: white;
+  width: 35px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye::after {
+  content: "";
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 12px;
+}
+
+/* Sobrancelhas */
+.eyebrows {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40px;
+  width: 80%;
+  left: 10%;
+}
+
+.eyebrow {
+  width: 40px;
+  height: 10px;
+  background-color: black;
+  transform: rotate(-20deg);
+}
+
+.left-brow {
+  transform: rotate(-20deg);
+}
+
+.right-brow {
+  transform: rotate(20deg);
+}
+
+/* Boca */
+.mouth {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  bottom: 30px;
+  left: 55px;
+}
+
+/* Cabelo */
+.hair {
+  position: absolute;
+  top: -30px;
+  left: 25px;
+}
+
+.spike {
+  background-color: black;
+  width: 40px;
+  height: 70px;
+  position: absolute;
+  transform-origin: bottom;
+}
+
+.spike1 {
+  transform: rotate(-45deg

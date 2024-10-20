@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: auto; 
+    background-color: #1c1c1c;
+    color: white;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #cb0a17;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #cb0a17;
+    border-bottom: 3px solid #cb0a17;
+}
+
+main {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 200px; 
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    max-width: 1200px; 
+    position: relative;
+    gap: 5rem;
+    margin-top: -30px;
+}
+.carousel a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.project {
+    width: 300px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project:hover {
+    transform: scale(1.05); 
+    opacity: 0.9; 
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.additional-projects {
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 50px; 
+    padding-bottom: 50px; 
+}
+
+.additional-projects .project {
+    margin: 20px; 
+}
+
+.main-project {
+    transform: scale(1.1); 
+    opacity: 1;
+    z-index: 2;
+}
+
+.small-project {
+    transform: scale(0.9); 
+    opacity: 0.6;
+    filter: blur(2px);
+}
