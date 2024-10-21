@@ -10,7 +10,12 @@
 <body>
     <header>
         <a href="../index.html" class="logo">Thiago</a>
-        <nav>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="nav">
             <a href="../index.html">Home</a>
             <!--<a href="services.html" >Services</a>-->
             <a href="skills.html">Skills</a>
@@ -22,17 +27,17 @@
 
     <main>
         <div class="carousel">
-            <a href="https://github.com/thiagoports/projects/tree/main/autobot" class="project">
+            <a href="https://github.com/thiagoports/projects/tree/main/autobot" target="_blank" class="project">
                 <img src="../img/Autobot.png" alt="Project 1">
                 <h2>Autobot</h2>
                 <p>A PyAutoGUI robot that automates product registration.</p>
             </a>
-            <a href="https://github.com/Sociau/Sociau-website" class="project">
+            <a href="https://github.com/Sociau/Sociau-website" target="_blank" class="project">
                 <img src="../img/Sociau.png" alt="Project 2">
                 <h2>Sociau</h2>
                 <p>Connects animal adoption NGOs.</p>
             </a>
-            <a href="https://github.com/thiagoports/projects/tree/main/data_analysis" class="project">
+            <a href="https://github.com/thiagoports/projects/tree/main/data_analysis" target="_blank" class="project">
                 <img src="../img/DataAnalysis.png" alt="Project 3">
                 <h2>Data Analysis</h2>
                 <p>AI that analyzes business data.</p>
@@ -59,6 +64,6 @@
         </section>
 -->
     </main>
-
+    <script src="../JS/hamburguer.js"></script>
 </body>
 </html>

@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/styles/home.css">
-    <link rel="stylesheet" href="./CSS/colors/colors.css"">
+    <link rel="stylesheet" href="./CSS/colors/colors.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
         <a href="./index.html" class="logo">Thiago</a>
 
-        <nav>
+        <!-- Botão de hambúrguer -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav id="nav">
             <a href="./index.html" class="active"> Home</a>
             <!--<a href="services.html" >Services</a>-->
             <a href="./HTML/skills.html" >Skills</a>
@@ -31,12 +38,19 @@
             <h3 class="typing-text">I'm a <span></span></h3>
             <p>A student of Systems Analysis and Development, passionate about becoming a full-stack developer. Outside of coding, I enjoy working out, running, gaming, and diving into sports. I’m always reading and eager to learn new things. I live in Paraiba, Brazil.</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/thiago-porto-2a40592a4"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/thiagoports"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/thiagoporto_s"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/thiago-porto-2a40592a4" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/thiagoports" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/thiagoporto_s" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
-            <a href="mailto:thiagoports@hotmail.com" class="btn">Contact me</a>
+            <a href="mailto:thiagoports@hotmail.com" target="_blank" class="btn">Contact me</a>
         </div>
     </section>
+    <script src="./JS/hamburguer.js"></script>
 </body>
 </html>

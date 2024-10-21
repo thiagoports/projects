@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,19 +10,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
     background-color: #1c1c1c;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header{
+header {
     margin-top: 20px;
     position: fixed;
     top: 0;
@@ -37,7 +40,7 @@ header{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
     color: var(--primary-color);
     font-weight: 800;
@@ -45,11 +48,11 @@ header{
     transition: 0.5s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-nav a{
+nav a {
     font-size: 1.8rem;
     color: white;
     margin-left: 4rem;
@@ -59,65 +62,18 @@ nav a{
 }
 
 nav a:hover,
-nav a.active{
+nav a.active {
     color: var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
 }
 
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid var(--primary-color);
-        border-bottom: 3px solid var(--primary-color);
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #1c1c1c;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-    }
-
-    nav.active{
-        display: block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid var(--primary-color);
-    }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #1c1c1c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  max-width: 1200px;
-  justify-content: center;
-  margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1200px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .skill-block {
@@ -155,11 +111,92 @@ body {
     margin-bottom: 80px; 
 }
 
-
-  .skill-block:hover {
+.skill-block:hover {
     transform: scale(1.05);
     border-color: var(--primary-color); 
-  }
-  
+}
 
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+}
 
+.bar {
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 500px) {
+    header.hidden {
+        transform: translateY(-100%); 
+        transition: transform 0.3s ease; 
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+
+    nav {
+        display: none; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: #1c1c1c;
+        z-index: 99;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    nav.active {
+        display: flex; 
+    }
+
+    nav a {
+        font-size: 2rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 1200px;
+    }
+}
+
+@media (max-width: 995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid var(--primary-color);
+        border-bottom: 3px solid var(--primary-color);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #1c1c1c;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid var(--primary-color);
+    }
+}
