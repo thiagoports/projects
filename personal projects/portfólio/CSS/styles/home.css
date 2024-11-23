@@ -62,13 +62,14 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 60%;
 }
+
 
 body{
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
+    overflow-x: hidden;    
     background-color: #1c1c1c;
     color: white;
 }
@@ -162,7 +163,7 @@ section{
 }
 
 .home .home-content h1{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -182,6 +183,7 @@ span{
 .home-content p{
     font-size: 1.6rem;
 }
+
 
 .home-img{
     border-radius: 50%;
@@ -281,10 +283,10 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "ADS student";
+        content: "Estudante de ADS";
     }
     21%, 40%{
-        content: "Web Developer";
+        content: "Desenvolvedor Web";
     }
     41%, 60%{
         content: "Web Designer";
@@ -293,7 +295,7 @@ span{
         content: "Canva/Figma Designer";
     }
     81%, 100%{
-        content: "UX and UI Designer";
+        content: "UX e UI Designer";
     }
 }
 
