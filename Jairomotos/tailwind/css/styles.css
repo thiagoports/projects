@@ -1,0 +1,23 @@
+body {
+    font-family: Montserrat, bold;
+  }
+
+  nav img {
+    height: 30px;
+    width: auto;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  h2 {
+    color: #1a202c;
+  }
+
+
+  footer p {
+    font-size: 14px;
+  }
+  

@@ -14,43 +14,6 @@
     transition: all 0.3s ease;
 }
 
-
-@media (max-width: 500px) {
-    header.hidden {
-        transform: translateY(-100%); 
-        transition: transform 0.3s ease; 
-    }
-    
-
-    .hamburger {
-        display: flex; 
-    }
-
-    nav {
-        display: none; 
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100vh;
-        background-color: #1c1c1c;
-        z-index: 99;
-        flex-direction: column;
-        padding-top: 3rem;
-    }
-
-    nav.active {
-        display: flex; 
-    }
-
-    nav a {
-        font-size: 2rem;
-        margin: 2rem 0;
-        text-align: center;
-    }
-}
-
-
 *{
     margin: 0;
     padding: 0;
@@ -116,38 +79,6 @@ nav a.active{
     border-bottom: 3px solid var(--primary-color);
 }
 
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid var(--primary-color);
-        border-bottom: 3px solid var(--primary-color);
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #1c1c1c;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-    }
-
-    nav.active{
-        display: block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid var(--primary-color);
-    }
-}
 
 section{
     min-height: 100vh;
@@ -172,13 +103,6 @@ span{
     color: var(--primary-color);
 }
 
-@media (max-width: 500px) {
-    .home-content h3{
-        font-size: 4rem;
-        margin-bottom: 4rem;
-        font-weight: 700;
-    }
-}
 
 .home-content p{
     font-size: 1.6rem;
@@ -299,28 +223,22 @@ span{
     }
 }
 
-@media (max-width: 1000px){
-    .home{
-        gap: 4rem;
-    }
+/* Responsividade para Mobile */
+@media screen and (max-width: 600px;){
+
 }
 
-@media(max-width:995px){
-    .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
+/* Responsividade para Tablets */
+@media screen and (max-width: 768px;) and (min-width: 600px;){
 
-    .home .home-content h3{
-        font-size: 2.5rem;
-    }
+}
 
-    .home-content h1{
-        font-size: 5rem;
-    }
+/* Responsividade para Mini Laptops */
+@media screen and (max-width: 992px;) and (min-width: 768px;){
 
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
+}
+
+/* Responsividade para Laptops e Desktops */
+@media screen and (min-width: 992px;){
+
 }

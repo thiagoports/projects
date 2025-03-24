@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jairo Motos</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind/css/styles.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .vehicle-block:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+
+      .vehicle-block:hover img {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+    </style>
+
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a class="flex items-center space-x-2" href="#">
+          <img src="tailwind/img/logo-jairomotos.png" alt="Logo" />
+        </a>
+        <div class="space-x-4">
+          <a class="hover:underline" href="#contato">Contato</a>
+        </div>
+      </div>
+    </nav>
+
+<!-- Filtros -->
+<script src="js/filtro.js"></script>
+<div class="flex justify-center items-center mt-8">
+  <div class="flex space-x-4">
+    <!-- Filtro por Marca -->
+    <select id="brandFilter" class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-white-400 transition focus:outline-none">
+      <option value="all">Todas as Marcas</option>
+      <option value="Honda">Honda</option>
+      <option value="Shineray">Shineray</option>
+      <option value="Avelloz">Avelloz</option>
+    </select>
+  </div>
+</div>
+
+    <div class="container mx-auto mt-4 p-4">
+      <!-- Seção de Veículos -->
+      <section class="mt-8">
+        <h2 class="text-2xl font-bold text-center">Nossos Veículos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+          <!-- Bloco de Veículo 1 -->
+          <div class="p-4 bg-white shadow rounded text-center vehicle-block" data-brand="Honda">
+            <img src="tailwind/img/moto1.jpeg" alt="Moto 1" class="w-full h-80 object-cover rounded">
+            <h3 class="font-semibold mt-2">POP 100</h3>
+            <p>Ano/Modelo 2014</p>
+            <div class="mt-4">
+              <p class="text-xl font-bold text-gray-900">R$ 8.500,00</p>
+              <a href="https://wa.me/+5583991945349?text=Gostaria%20de%20comprar%20a%20POP%20100" target="_blank">
+                <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-400 transition">Comprar</button>
+              </a>
+            </div>
+          </div>
+          <!-- Bloco de Veículo 2 -->
+          <div class="p-4 bg-white shadow rounded text-center vehicle-block" data-brand="Honda">
+            <img src="tailwind/img/moto2.jpeg" alt="Moto 2" class="w-full h-80 object-cover rounded">
+            <h3 class="font-semibold mt-2">BIZ 125i</h3>
+            <p>Ano/Modelo 2024</p>
+            <div class="mt-4">
+              <p class="text-xl font-bold text-gray-900">R$ 18.300,00</p>
+              <a href="https://wa.me/+5583991945349?text=Gostaria%20de%20comprar%20a%20BIZ%20125i" target="_blank">
+                <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-400 transition">Comprar</button>
+              </a>
+            </div>
+          </div>
+          <!-- Bloco de Veículo 3 -->
+          <div class="p-4 bg-white shadow rounded text-center vehicle-block" data-brand="Honda">
+            <img src="tailwind/img/moto3.jpeg" alt="Moto 3" class="w-full h-80 object-cover rounded">
+            <h3 class="font-semibold mt-2">POP 110i</h3>
+            <p>Ano/Modelo 2024</p>
+            <div class="mt-4">
+              <p class="text-xl font-bold text-gray-900">R$ 13.500,00</p>
+              <a href="https://wa.me/+5583991945349?text=Gostaria%20de%20comprar%20a%20POP%20110i" target="_blank">
+                <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-400 transition">Comprar</button>
+              </a>
+            </div>
+          </div>
+          <!-- Bloco de Veículo 4 -->
+          <div class="p-4 bg-white shadow rounded text-center vehicle-block" data-brand="Avelloz">
+            <img src="tailwind/img/moto4.jpeg" alt="Moto 4" class="w-full h-80 object-cover rounded">
+            <h3 class="font-semibold mt-2">AVELLOZ AZ1</h3>
+            <p>Ano/Modelo 2024</p>
+            <div class="mt-4">
+              <p class="text-xl font-bold text-gray-900">R$ 10.000,00</p>
+              <a href="https://wa.me/+5583991945349?text=Gostaria%20de%20comprar%20a%20AVELLOZ%20AZ1" target="_blank">
+                <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-400 transition">Comprar</button>
+              </a>
+            </div>
+          </div>
+          <!-- Bloco de Veículo 5 -->
+          <div class="p-4 bg-white shadow rounded text-center vehicle-block" data-brand="Honda">
+            <img src="tailwind/img/moto5.jpeg" alt="Moto 5" class="w-full h-80 object-cover rounded">
+            <h3 class="font-semibold mt-2">CG FAN 160</h3>
+            <p>Ano/Modelo 2025</p>
+            <div class="mt-4">
+              <p class="text-xl font-bold text-gray-900">R$ 24.000,00</p>
+              <a href="https://wa.me/+5583991945349?text=Gostaria%20de%20comprar%20a%20CG%20FAN%20160" target="_blank">
+                <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-400 transition">Comprar</button>
+              </a>
+            </div>
+          </div>
+          <!-- Bloco de Veículo 6 -->
+          <div class="p-4 bg-white shadow rounded text-center vehicle-block" data-brand="Shineray">
+            <img src="tailwind/img/moto6.jpeg" alt="Moto 6" class="w-full h-80 object-cover rounded">
+            <h3 class="font-semibold mt-2">SHI 175 EFI</h3>
+            <p>Ano/Modelo 2025</p>
+            <div class="mt-4">
+              <p class="text-xl font-bold text-gray-900">R$ 18.790,00</p>
+              <a href="https://wa.me/+5583991945349?text=Gostaria%20de%20comprar%20a%20SHI%20175%20EFI" target="_blank">
+                <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-400 transition">Comprar</button>
+              </a>
+            </div>
+          </div>
+          <!-- Bloco de Veículo 7 -->
+          <div class="p-4 bg-white shadow rounded text-center vehicle-block" data-brand="Avelloz">
+            <img src="tailwind/img/moto7.jpeg" alt="Moto 7" class="w-full h-80 object-cover rounded">
+            <h3 class="font-semibold mt-2">AVELLOZ AZ1</h3>
+            <p>Ano/Modelo 2025</p>
+            <div class="mt-4">
+              <p class="text-xl font-bold text-gray-900">R$ 10.000,00</p>
+              <a href="https://wa.me/+5583991945349?text=Gostaria%20de%20comprar%20a%20AVELLOZ%20AZ1" target="_blank">
+                <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-400 transition">Comprar</button>
+              </a>
+            </div>
+          </div>
+          <!-- Bloco de Veículo 8 -->
+          <div class="p-4 bg-white shadow rounded text-center vehicle-block" data-brand="Honda">
+            <img src="tailwind/img/moto8.jpeg" alt="Moto 8" class="w-full h-80 object-cover rounded">
+            <h3 class="font-semibold mt-2">BIZ 125i</h3>
+            <p>Ano/Modelo 2021</p>
+            <div class="mt-4">
+              <p class="text-xl font-bold text-gray-900">R$ 15.500,00</p>
+              <a href="https://wa.me/+5583991945349?text=Gostaria%20de%20comprar%20a%20BIZ%20125i" target="_blank">
+                <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-400 transition">Comprar</button>
+              </a>
+            </div>
+          </div>
+          <!-- Bloco de Veículo 9 -->
+          <div class="p-4 bg-white shadow rounded text-center vehicle-block" data-brand="Honda">
+            <img src="tailwind/img/moto9.jpeg" alt="Moto 9" class="w-full h-80 object-cover rounded">
+            <h3 class="font-semibold mt-2">BROS 160 ESDD</h3>
+            <p>Ano/Modelo 2019</p>
+            <div class="mt-4">
+              <p class="text-xl font-bold text-gray-900">R$ 17.500,00</p>
+              <a href="https://wa.me/+5583991945349?text=Gostaria%20de%20comprar%20a%20BROS%20160%20ESDD" target="_blank">
+                <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-400 transition">Comprar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clientes -->
+    <section class="mt-12 bg-gray-50 py-8" id="testemunhos">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">O que nossos clientes dizem</h2>
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Cliente 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <img src="tailwind/img/arthur.jpeg" alt="Cliente 1" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <p class="text-xl font-semibold text-gray-900">Arthur Ákil</p>
+          <p class="text-gray-600 mb-4">"Precisei comprar uma moto e me indicaram a jairo, não sabia se era bom e era a minha primeira moto, vários amigos e conhecidos já tinham comprado lá, dei o voto de confiança, o atendimento bacana, gostei e compraria dnv lá"</p>
+          <div class="flex justify-center space-x-2">
+          </div>
+        </div>
+  
+        <!-- Cliente 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <img src="tailwind/img/lucas.jpeg" alt="Cliente 2" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <p class="text-xl font-semibold text-gray-900">José Lucas</p>
+          <p class="text-gray-600 mb-4">"Entrei querendo uma moto, saí com uma nova experiência e apaixonado pelo vendedor, lindo, carismático, e o filho dele tbm é lindo."</p>
+          <div class="flex justify-center space-x-2">
+          </div>
+        </div>
+  
+        <!-- Cliente 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <img src="tailwind/img/henrique.jpeg" alt="Cliente 3" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <p class="text-xl font-semibold text-gray-900">Henrique Azevedo</p>
+          <p class="text-gray-600 mb-4">"Queria comprar uma moto mas me surpreendi com os preços extremamente baratos, não ironicamente, não acredito que tinha um caminhão tampando essa linda loja e seu belíssimo atendente "</p>
+          <div class="flex justify-center space-x-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+      <footer id="contato" class="bg-gray-800 text-white text-center p-4 mt-8">
+        <div class="flex justify-center space-x-4">
+          <a href="https://www.instagram.com/jairomotospb" class="text-white hover:text-gray-400" target="_blank">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="https://wa.me/+5583991945349" class="text-white hover:text-gray-400" target="_blank">
+            <i class="fab fa-whatsapp fa-lg"></i>
+          </a>
+        </div>
+        <p class="mt-4">&copy; 2025 JairoMotos. Todos os direitos reservados.</p>
+      </footer>      
+    </div>
+  </body>
+</html>
+
