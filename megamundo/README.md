@@ -9,6 +9,7 @@ Todos os códigos, sistemas e integrações aqui documentados foram realizados s
 ## 📁 Estrutura da Pasta 
 
 mega-mundo-terapeutico/
+
 ├── README.md
 └── linktree/
 
