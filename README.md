@@ -9,8 +9,11 @@ com foco em desenvolvimento web, automações, sistemas personalizados e experi�
 ## 📁 Estrutura do Repositório
 
 /projects/
+
 ├── README.md
+
 ├── pessoais/
+
 └── clientes/
 
 
