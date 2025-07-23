@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background: linear-gradient(to bottom, #0071ff, #3aa9ff);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  gap: 0rem;
+}
+
+.top-logo {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.top-logo img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.moto-mes {
+  background-color: #fff;
+  width: 100%;
+  max-width: 360px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.moto-mes h2 {
+  color: #484848;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: medium;
+}
+
+.moto-imagem img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.moto-mes h3 {
+  font-size: 1rem;
+  color: #484848;
+  font-weight: bold;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #62E348;
+  color: white;
+  font-weight: medium;
+  text-decoration: none;
+  padding: 0.75rem 2.5rem;
+  border-radius: 5px;
+  margin-top: 0.1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+.btn-whatsapp img {
+  width: 20px;
+  height: 20px;
+}
+
+.localizacao {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: #fff;
+  margin-top: 0rem;
+}
+
+.btn-maps {
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #484848;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: medium;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.btn-maps:hover {
+  background-color: #e6e6e6;
+}
+
+.btn-maps img {
+  width: 20px;
+  height: 20px;
+}
+
+.endereco {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-weight: medium;
+}
+
+.copyright {
+  margin-top: 4.5rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: medium;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.pulsar {
+  animation: pulse 2s infinite;
+}
+
+/* RESPONSIVIDADE */
+
+
