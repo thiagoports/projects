@@ -6,7 +6,7 @@
 
 body {
   font-family: Montserrat, sans-serif;
-  background: url('../img/santaluzia-blue.svg') no-repeat center center fixed;
+  background: url('../img/santaluzia-blue.svg') no-repeat center center;
   background-size: cover; 
   color: #fff;
   display: flex;
