@@ -16,7 +16,7 @@ Este projeto foi desenvolvido para centralizar os canais de contato e destacar a
 Tudo isso com foco em velocidade, praticidade e compatibilidade mobile.
 
 ## 🔗 Acesse Agora
-jairomotos.vercel.app
+https://jairomotos.vercel.app
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -29,7 +29,7 @@ JavaScript – Funcionalidades simples
 Hospedagem na Vercel – Deploy automático e gratuito
 
 ## 📁 Estrutura do Projeto
-
+```
 linktree/
 ├── index.html           
 ├── css/
@@ -39,7 +39,7 @@ linktree/
 ├── img/
 │   └── images...          
 └── README.md            
-
+```
 ## 💡 Funcionalidades
 
 ✅ Destaque visual para a Moto do Mês
