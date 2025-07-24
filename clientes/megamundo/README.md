@@ -7,13 +7,11 @@ Todos os códigos, sistemas e integrações aqui documentados foram realizados s
 ---
 
 ## 📁 Estrutura da Pasta 
-
+```
 megamundo/
-
 ├── README.md
-
 └── linktree/
-
+```
 ---
 
 ## 🛠️ Tecnologias Utilizadas
