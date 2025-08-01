@@ -1,0 +1,287 @@
+/* Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  background-color: #fff;
+}
+
+.topo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #029834, #013211 130%); 
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 20px;
+  filter: saturate(1.3);
+}
+
+.slogan {
+  color: white;
+  font-size: 16px;
+}
+
+/* Abaixo é a section do perfil de Junior */
+
+.perfil {
+  margin-top: -15px;
+  padding: 0;
+  text-align: center;
+}
+
+.foto-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.info h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  margin-top: 26px;
+}
+
+.info p {
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.btn-especialista {
+  position: absolute;
+  bottom: 15px;
+  width: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #D8BB50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+
+.btn-especialista:hover {
+  background-color: #a88f34; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(216, 187, 80, 0.7);
+  }
+  70% {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 0 10px 10px rgba(216, 187, 80, 0);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(216, 187, 80, 0);
+  }
+}
+
+.linha-dourada {
+  margin-top: 0px;
+  height: 4px;
+  width: 400px;
+  background-color: #D8BB50;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+
+/* Abaixo é a section de Opções */
+
+.opcoes {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  text-align: center;
+}
+
+.buttons {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.btn-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #029834;
+  color: white;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.btn-site:hover {
+  background-color: #02692a;
+}
+
+.p-texto {
+  margin-top: 8px;  
+}
+
+.btn-quest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #D8BB50;
+  color: white;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.btn-quest:hover {
+  background-color: #a88f34;
+}
+
+.btn-opcao img {
+  width: 20px;
+  height: 20px;
+}
+
+.loc-text{
+  color: #029834;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.localizacao {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.mapa {
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-local {
+  display: inline-block;
+  background-color: #029834;
+  color: white;
+  padding: 12px 62px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+  margin-top: -10px;
+}
+
+.btn-local:hover {
+  background-color: #02692a;
+}
+
+.linha-verde {
+  margin-top: 0px;
+  height: 4px;
+  width: 100%; 
+  max-width: 400px;
+  background-color: #029834;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+
+/* Section Vídeo*/
+
+/* Footer */
+
+.rodape {
+  background: linear-gradient(to bottom, #029834, #000000); 
+  padding: 30px 20px 20px;
+  text-align: center;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: white;
+}
+
+.logo-rodape {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: saturate(1.3);
+}
+
+.texto-rodape {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  margin-bottom: 20px;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.icones img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.icones img:hover {
+  transform: scale(1.2);
+}
+
+.direitos {
+  font-size: 12px;
+  opacity: 0.7;
+}
