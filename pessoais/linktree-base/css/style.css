@@ -1,0 +1,336 @@
+
+/* Estilo geral para dispositivos móveis — 100% da largura */
+.container {
+  width: 100%;
+  background-color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Estilo para telas maiores (simulando um celular) */
+@media (min-width: 600px) {
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+  }
+
+  .container {
+    max-width: 430px; /* largura de um celular */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  background-color: #fff;
+}
+
+.topo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #7a7a7a, #3d3d3d 130%); 
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 20px;
+  filter: saturate(1.3);
+}
+
+.slogan {
+  color: white;
+  font-size: 16px;
+}
+
+/* Abaixo é a section do perfil de Junior */
+
+.perfil {
+  margin-top: -20px;
+  padding: 0;
+  text-align: center;
+}
+
+.foto-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.info h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  margin-top: 26px;
+}
+
+.info p {
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.btn-especialista {
+  position: absolute;
+  bottom: 15px;
+  width: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff1414;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+
+.btn-especialista:hover {
+  background-color: #a10000; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 25, 25, 0.7);
+  }
+  70% {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 0 10px 10px rgba(216, 187, 80, 0);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(216, 187, 80, 0);
+  }
+}
+
+.linha-dourada {
+  margin-top: 0px;
+  height: 4px;
+  width: 450px;
+  background-color: #ff0f0f;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+
+/* Abaixo é a section de Opções */
+
+.opcoes {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  text-align: center;
+}
+
+.buttons {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.btn-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #7a7a7a;
+  color: white;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.btn-site:hover {
+  background-color: #515151;
+}
+
+.p-texto {
+  margin-top: 8px;  
+}
+
+.btn-quest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ff1616;
+  color: white;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.btn-quest:hover {
+  background-color: #bb0000;
+}
+
+.btn-opcao img {
+  width: 20px;
+  height: 20px;
+}
+
+.loc-text{
+  color: #ff1212;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.localizacao {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.mapa {
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-local {
+  display: inline-block;
+  background-color: #7a7a7a;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+  margin-top: -10px;
+}
+
+.btn-local:hover {
+  background-color: #515151;
+}
+
+/*.linha-verde {
+  margin-top: 0px;
+  height: 4px;
+  width: 100%; 
+  max-width: 400px;
+  background-color: #029834;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}*/
+
+/* Section Vídeo*/
+
+
+/* Footer */
+
+.rodape {
+  background: linear-gradient(to bottom, #7a7a7a, #000000); 
+  padding: 30px 20px 20px;
+  text-align: center;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: white;
+}
+
+.logo-rodape {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: saturate(1.3);
+}
+
+.texto-rodape {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 7px;
+  margin-bottom: 20px;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.icones img {
+  transition: transform 0.3s ease;
+}
+
+.icones img:hover {
+  transform: scale(1.2);
+}
+
+.direitos {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.icon-site {
+  width: 23px;
+  height: 23px;
+  filter: brightness(0) invert(1);
+  margin-top: -2px;
+}
+
+.icon-chat {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.icon-insta {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.icon-zap {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
