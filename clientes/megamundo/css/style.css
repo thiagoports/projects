@@ -61,7 +61,7 @@ body {
 /* Abaixo é a section do perfil de Junior */
 
 .perfil {
-  margin-top: -15px;
+  margin-top: -20px;
   padding: 0;
   text-align: center;
 }
@@ -141,7 +141,7 @@ body {
 .linha-dourada {
   margin-top: 0px;
   height: 4px;
-  width: 400px;
+  width: 450px;
   background-color: #D8BB50;
   margin-left: auto;
   margin-right: auto;
@@ -236,7 +236,7 @@ body {
   display: inline-block;
   background-color: #029834;
   color: white;
-  padding: 12px 62px;
+  padding: 12px 50px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 14px;
@@ -263,6 +263,7 @@ body {
 
 /* Section Vídeo*/
 
+
 /* Footer */
 
 .rodape {
@@ -284,7 +285,7 @@ body {
 .texto-rodape {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 9px;
+  font-size: 7px;
   margin-bottom: 20px;
 }
 
@@ -296,8 +297,6 @@ body {
 }
 
 .icones img {
-  width: 20px;
-  height: 20px;
   transition: transform 0.3s ease;
 }
 
@@ -308,4 +307,29 @@ body {
 .direitos {
   font-size: 12px;
   opacity: 0.7;
+}
+
+.icon-site {
+  width: 23px;
+  height: 23px;
+  filter: brightness(0) invert(1);
+  margin-top: -2px;
+}
+
+.icon-chat {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.icon-insta {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.icon-zap {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
 }
