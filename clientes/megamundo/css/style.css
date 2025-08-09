@@ -35,9 +35,9 @@ body {
 }
 
 .topo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background: linear-gradient(to bottom, #029834, #013211 130%); 
+  background: linear-gradient(to bottom, #029834, #013211 130%);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 30px 20px;
@@ -107,7 +107,7 @@ body {
   width: 280px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #D8BB50;
+  background-color: #d8bb50;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -118,9 +118,8 @@ body {
   animation: pulse 1.8s infinite ease-in-out;
 }
 
-
 .btn-especialista:hover {
-  background-color: #a88f34; 
+  background-color: #a88f34;
 }
 
 @keyframes pulse {
@@ -142,7 +141,7 @@ body {
   margin-top: 0px;
   height: 4px;
   width: 450px;
-  background-color: #D8BB50;
+  background-color: #d8bb50;
   margin-left: auto;
   margin-right: auto;
   border-radius: 2px;
@@ -151,7 +150,7 @@ body {
 /* Abaixo é a section de Opções */
 
 .opcoes {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0px;
   text-align: center;
 }
@@ -162,6 +161,38 @@ body {
   flex-direction: column;
   gap: 15px;
   margin-bottom: 10px;
+}
+
+.mascote {
+  width: 25%;
+  height: 25%;
+  margin: -29px auto -15%;
+  display: block;
+}
+
+.icon-contato-loja {
+  width: 23px;
+  height: 23px;
+}
+
+.btn-loja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #029834;
+  color: white;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.btn-loja:hover {
+  background-color: #02742a; /* tom mais escuro */
 }
 
 .btn-site {
@@ -176,7 +207,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
 }
 
@@ -185,7 +216,7 @@ body {
 }
 
 .p-texto {
-  margin-top: 8px;  
+  margin-top: 8px;
 }
 
 .btn-quest {
@@ -193,14 +224,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: #D8BB50;
+  background-color: #d8bb50;
   color: white;
   padding: 12px;
   border-radius: 25px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
 }
 
@@ -213,9 +244,9 @@ body {
   height: 20px;
 }
 
-.loc-text{
+.loc-text {
   color: #029834;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -241,7 +272,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
   margin-top: -10px;
 }
@@ -263,11 +294,10 @@ body {
 
 /* Section Vídeo*/
 
-
 /* Footer */
 
 .rodape {
-  background: linear-gradient(to bottom, #029834, #000000); 
+  background: linear-gradient(to bottom, #029834, #000000);
   padding: 30px 20px 20px;
   text-align: center;
   border-top-left-radius: 0px;
@@ -283,7 +313,7 @@ body {
 }
 
 .texto-rodape {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 7px;
   margin-bottom: 20px;
