@@ -8,71 +8,74 @@
   </head>
 
   <body>
-    <div class="top-logo">
-      <header>
-        <img
-          src="img/logo-jairomotos.png"
-          alt="Logo Jairo Motos"
-          class="logo"
-        />
-      </header>
-    </div>
+    <!-- Cabeçalho -->
+    <header class="top-logo">
+      <img src="img/logo-jairomotos.png" alt="Logo Jairo Motos" class="logo" />
+    </header>
 
-    <section class="moto-mes">
-      <h2>MOTO DO MÊS</h2>
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Moto em destaque -->
+      <section class="moto-mes">
+        <h2>MOTO DO MÊS</h2>
 
-      <div class="moto-imagem">
-        <video controls autoplay muted loop>
-          <source src="img/pop110i-2022.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo.
-        </video>
-      </div>
+        <figure class="moto-imagem">
+          <video controls autoplay muted loop>
+            <source src="img/pop110i-2022.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo.
+          </video>
+          <figcaption>Honda POP 110i 2022</figcaption>
+        </figure>
 
-      <h3>Honda POP 110i 2022</h3>
+        <p class="preco"><strong>R$11.300,00</strong></p>
 
-      <h2>R$11.300,00</h2>
+        <nav class="acoes">
+          <a
+            href="https://wa.me/+5583996793821"
+            target="_blank"
+            class="btn-whatsapp"
+          >
+            Entre em contato
+            <img src="img/whatsapp-logo.png" alt="WhatsApp" />
+          </a>
 
-      <a
-        href="https://wa.me/+5583991945349"
-        target="_blank"
-        class="btn-whatsapp"
-      >
-        Entre em contato
-        <img src="img/whatsapp-logo.png" alt="WhatsApp" />
-      </a>
+          <a
+            href="https://www.instagram.com/p/DNWIfpeRUcO/?igsh=ZWliOWRkNGdrZGNp"
+            target="_blank"
+            class="btn-info"
+          >
+            Mais informações
+          </a>
+        </nav>
+      </section>
 
-      <a
-        href="https://www.instagram.com/p/DNWIfpeRUcO/?igsh=ZWliOWRkNGdrZGNp"
-        target="_blank"
-        class="btn-info"
-      >
-        Mais informações
-      </a>
-    </section>
+      <!-- Localização -->
+      <section class="localizacao">
+        <figure class="mapa-imagem">
+          <img src="img/lozalizacao-jairomotos.PNG" alt="Mapa da Jairo Motos" />
+          <figcaption>Localização da Jairo Motos</figcaption>
+        </figure>
 
-    <section class="localizacao">
-      <div class="mapa-imagem">
-        <img src="img/lozalizacao-jairomotos.PNG" alt="Location" />
-      </div>
+        <a
+          href="https://maps.app.goo.gl/yeqZmHrcrw9hvYvGA"
+          target="_blank"
+          class="btn-maps"
+        >
+          <span><strong>Google</strong> Maps</span>
+          <img src="img/google-maps-icon.png" alt="Ícone Google Maps" />
+        </a>
 
-      <a
-        href="https://maps.app.goo.gl/yeqZmHrcrw9hvYvGA"
-        target="_blank"
-        class="btn-maps"
-      >
-        <span><strong>Google</strong>Maps</span>
-        <img src="img/google-maps-icon.png" alt="Maps" />
-      </a>
+        <address class="endereco">
+          Rua Abdon Nóbrega, Centro, 58600-000<br />
+          Santa Luzia - PB
+        </address>
+      </section>
+    </main>
 
-      <h2 class="endereco">
-        Rua Abdon Nóbrega, Centro, 58600-000<br />
-        Santa Luzia - PB
-      </h2>
-
-      <h5 class="copyright">
-        © 2025 Jairo Motos. Todos os direitos reservados.
-      </h5>
-    </section>
+    <!-- Rodapé -->
+    <footer>
+      <p class="copyright">© 2025 Jairo Motos. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="js/scripts.js"></script>
   </body>
